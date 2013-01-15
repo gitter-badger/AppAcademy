@@ -1,0 +1,1688 @@
+--- !ruby/object:Gameboard
+board_size: 9
+gameboard:
+- - &70317855023880 !ruby/object:Square
+    bomb: false
+    display_token: ! '*'
+    neighbors:
+    - &70317855021780 !ruby/object:Square
+      bomb: false
+      display_token: ! '*'
+      neighbors:
+      - &70317855021040 !ruby/object:Square
+        bomb: false
+        display_token: ! '*'
+        neighbors:
+        - &70317855020240 !ruby/object:Square
+          bomb: false
+          display_token: ! '*'
+          neighbors:
+          - &70317855017980 !ruby/object:Square
+            bomb: false
+            display_token: ! '*'
+            neighbors:
+            - &70317855008600 !ruby/object:Square
+              bomb: false
+              display_token: ! '*'
+              neighbors:
+              - &70317855007780 !ruby/object:Square
+                bomb: true
+                display_token: B
+                neighbors:
+                - &70317855007040 !ruby/object:Square
+                  bomb: true
+                  display_token: B
+                  neighbors:
+                  - &70317855005200 !ruby/object:Square
+                    bomb: false
+                    display_token: ! '*'
+                    neighbors:
+                    - &70317855005120 !ruby/object:Square
+                      bomb: false
+                      display_token: ! '*'
+                      neighbors:
+                      - *70317855007040
+                      - *70317855005200
+                      - &70317855005020 !ruby/object:Square
+                        bomb: false
+                        display_token: ! '*'
+                        neighbors:
+                        - &70317855006960 !ruby/object:Square
+                          bomb: false
+                          display_token: ! '*'
+                          neighbors:
+                          - *70317855007780
+                          - *70317855007040
+                          - *70317855005200
+                          - *70317855005120
+                          - *70317855005020
+                          - &70317855006880 !ruby/object:Square
+                            bomb: false
+                            display_token: ! '*'
+                            neighbors:
+                            - &70317855007700 !ruby/object:Square
+                              bomb: false
+                              display_token: ! '*'
+                              neighbors:
+                              - *70317855008600
+                              - *70317855007780
+                              - *70317855007040
+                              - *70317855006960
+                              - *70317855006880
+                              - &70317855007620 !ruby/object:Square
+                                bomb: false
+                                display_token: ! '*'
+                                neighbors:
+                                - &70317855008520 !ruby/object:Square
+                                  bomb: true
+                                  display_token: B
+                                  neighbors:
+                                  - *70317855017980
+                                  - *70317855008600
+                                  - *70317855007780
+                                  - *70317855007700
+                                  - *70317855007620
+                                  - &70317855008460 !ruby/object:Square
+                                    bomb: false
+                                    display_token: ! '*'
+                                    neighbors:
+                                    - &70317855017820 !ruby/object:Square
+                                      bomb: false
+                                      display_token: ! '*'
+                                      neighbors:
+                                      - *70317855020240
+                                      - *70317855017980
+                                      - *70317855008600
+                                      - *70317855008520
+                                      - *70317855008460
+                                      - &70317855017680 !ruby/object:Square
+                                        bomb: false
+                                        display_token: ! '*'
+                                        neighbors:
+                                        - &70317855020160 !ruby/object:Square
+                                          bomb: false
+                                          display_token: ! '*'
+                                          neighbors:
+                                          - *70317855021040
+                                          - *70317855020240
+                                          - *70317855017980
+                                          - *70317855017820
+                                          - *70317855017680
+                                          - &70317855020080 !ruby/object:Square
+                                            bomb: false
+                                            display_token: ! '*'
+                                            neighbors:
+                                            - &70317855020960 !ruby/object:Square
+                                              bomb: false
+                                              display_token: ! '*'
+                                              neighbors:
+                                              - *70317855021780
+                                              - *70317855021040
+                                              - *70317855020240
+                                              - *70317855020160
+                                              - *70317855020080
+                                              - &70317855020880 !ruby/object:Square
+                                                bomb: false
+                                                display_token: ! '*'
+                                                neighbors:
+                                                - &70317855021680 !ruby/object:Square
+                                                  bomb: false
+                                                  display_token: ! '*'
+                                                  neighbors:
+                                                  - *70317855023880
+                                                  - *70317855021780
+                                                  - *70317855021040
+                                                  - *70317855020960
+                                                  - *70317855020880
+                                                  - &70317855021600 !ruby/object:Square
+                                                    bomb: false
+                                                    display_token: ! '*'
+                                                    neighbors:
+                                                    - &70317855023780 !ruby/object:Square
+                                                      bomb: false
+                                                      display_token: ! '*'
+                                                      neighbors:
+                                                      - *70317855023880
+                                                      - *70317855021780
+                                                      - *70317855021680
+                                                      - *70317855021600
+                                                      - &70317855022640 !ruby/object:Square
+                                                        bomb: false
+                                                        display_token: ! '*'
+                                                        neighbors:
+                                                        - *70317855023780
+                                                        - *70317855021680
+                                                        - *70317855021600
+                                                        - &70317855021520 !ruby/object:Square
+                                                          bomb: false
+                                                          display_token: ! '*'
+                                                          neighbors:
+                                                          - *70317855022640
+                                                          - *70317855021600
+                                                          - *70317855020880
+                                                          - &70317855020800 !ruby/object:Square
+                                                            bomb: false
+                                                            display_token: ! '*'
+                                                            neighbors:
+                                                            - *70317855021600
+                                                            - *70317855020880
+                                                            - *70317855020080
+                                                            - &70317855020000 !ruby/object:Square
+                                                              bomb: false
+                                                              display_token: ! '*'
+                                                              neighbors:
+                                                              - *70317855020880
+                                                              - *70317855020080
+                                                              - *70317855017680
+                                                              - &70317855017560 !ruby/object:Square
+                                                                bomb: false
+                                                                display_token: ! '*'
+                                                                neighbors:
+                                                                - *70317855020080
+                                                                - *70317855017680
+                                                                - *70317855008460
+                                                                - &70317855008320 !ruby/object:Square
+                                                                  bomb: false
+                                                                  display_token: ! '*'
+                                                                  neighbors:
+                                                                  - *70317855017680
+                                                                  - *70317855008460
+                                                                  - *70317855007620
+                                                                  - &70317855007520 !ruby/object:Square
+                                                                    bomb: false
+                                                                    display_token: ! '*'
+                                                                    neighbors:
+                                                                    - *70317855008460
+                                                                    - *70317855007620
+                                                                    - *70317855006880
+                                                                    - &70317855006800 !ruby/object:Square
+                                                                      bomb: false
+                                                                      display_token: ! '*'
+                                                                      neighbors:
+                                                                      - *70317855007620
+                                                                      - *70317855006880
+                                                                      - *70317855005020
+                                                                      - &70317855004940 !ruby/object:Square
+                                                                        bomb: false
+                                                                        display_token: ! '*'
+                                                                        neighbors:
+                                                                        - *70317855006880
+                                                                        - *70317855005020
+                                                                        - &70317855004860 !ruby/object:Square
+                                                                          bomb: false
+                                                                          display_token: ! '*'
+                                                                          neighbors:
+                                                                          - *70317855006800
+                                                                          - *70317855004940
+                                                                          - &70317855004800 !ruby/object:Square
+                                                                            bomb: false
+                                                                            display_token: ! '*'
+                                                                            neighbors:
+                                                                            - &70317855006720 !ruby/object:Square
+                                                                              bomb: false
+                                                                              display_token: ! '*'
+                                                                              neighbors:
+                                                                              - *70317855007520
+                                                                              - *70317855006800
+                                                                              - *70317855004940
+                                                                              - *70317855004860
+                                                                              - *70317855004800
+                                                                              - &70317855006640 !ruby/object:Square
+                                                                                bomb: false
+                                                                                display_token: ! '*'
+                                                                                neighbors:
+                                                                                - &70317855007440 !ruby/object:Square
+                                                                                  bomb: false
+                                                                                  display_token: ! '*'
+                                                                                  neighbors:
+                                                                                  - *70317855008320
+                                                                                  - *70317855007520
+                                                                                  - *70317855006800
+                                                                                  - *70317855006720
+                                                                                  - *70317855006640
+                                                                                  - &70317855007360 !ruby/object:Square
+                                                                                    bomb: false
+                                                                                    display_token: ! '*'
+                                                                                    neighbors:
+                                                                                    - &70317855008220 !ruby/object:Square
+                                                                                      bomb: false
+                                                                                      display_token: ! '*'
+                                                                                      neighbors:
+                                                                                      - *70317855017560
+                                                                                      - *70317855008320
+                                                                                      - *70317855007520
+                                                                                      - *70317855007440
+                                                                                      - *70317855007360
+                                                                                      - &70317855008140 !ruby/object:Square
+                                                                                        bomb: false
+                                                                                        display_token: ! '*'
+                                                                                        neighbors:
+                                                                                        - &70317855017460 !ruby/object:Square
+                                                                                          bomb: false
+                                                                                          display_token: ! '*'
+                                                                                          neighbors:
+                                                                                          - *70317855020000
+                                                                                          - *70317855017560
+                                                                                          - *70317855008320
+                                                                                          - *70317855008220
+                                                                                          - *70317855008140
+                                                                                          - &70317855017380 !ruby/object:Square
+                                                                                            bomb: true
+                                                                                            display_token: B
+                                                                                            neighbors:
+                                                                                            - &70317855019900 !ruby/object:Square
+                                                                                              bomb: false
+                                                                                              display_token: ! '*'
+                                                                                              neighbors:
+                                                                                              - *70317855020800
+                                                                                              - *70317855020000
+                                                                                              - *70317855017560
+                                                                                              - *70317855017460
+                                                                                              - *70317855017380
+                                                                                              - &70317855019780 !ruby/object:Square
+                                                                                                bomb: false
+                                                                                                display_token: ! '*'
+                                                                                                neighbors:
+                                                                                                - &70317855020680 !ruby/object:Square
+                                                                                                  bomb: false
+                                                                                                  display_token: ! '*'
+                                                                                                  neighbors:
+                                                                                                  - *70317855021520
+                                                                                                  - *70317855020800
+                                                                                                  - *70317855020000
+                                                                                                  - *70317855019900
+                                                                                                  - *70317855019780
+                                                                                                  - &70317855020560 !ruby/object:Square
+                                                                                                    bomb: true
+                                                                                                    display_token: B
+                                                                                                    neighbors:
+                                                                                                    - &70317855021440 !ruby/object:Square
+                                                                                                      bomb: false
+                                                                                                      display_token: ! '*'
+                                                                                                      neighbors:
+                                                                                                      - &70317855022460 !ruby/object:Square
+                                                                                                        bomb: false
+                                                                                                        display_token: ! '*'
+                                                                                                        neighbors:
+                                                                                                        - *70317855022640
+                                                                                                        - *70317855021600
+                                                                                                        - *70317855021520
+                                                                                                        - *70317855021440
+                                                                                                        - &70317855022220 !ruby/object:Square
+                                                                                                          bomb: false
+                                                                                                          display_token: ! '*'
+                                                                                                          neighbors:
+                                                                                                          - *70317855022460
+                                                                                                          - *70317855021520
+                                                                                                          - *70317855021440
+                                                                                                          - &70317855021360 !ruby/object:Square
+                                                                                                            bomb: false
+                                                                                                            display_token: ! '*'
+                                                                                                            neighbors:
+                                                                                                            - *70317855022220
+                                                                                                            - *70317855021440
+                                                                                                            - *70317855020680
+                                                                                                            - *70317855020560
+                                                                                                            - &70317855020480 !ruby/object:Square
+                                                                                                              bomb: false
+                                                                                                              display_token: ! '*'
+                                                                                                              neighbors:
+                                                                                                              - *70317855021360
+                                                                                                              - *70317855020560
+                                                                                                              - *70317855019780
+                                                                                                              - &70317855018540 !ruby/object:Square
+                                                                                                                bomb: false
+                                                                                                                display_token: ! '*'
+                                                                                                                neighbors:
+                                                                                                                - *70317855020560
+                                                                                                                - *70317855019780
+                                                                                                                - *70317855017380
+                                                                                                                - &70317855016860 !ruby/object:Square
+                                                                                                                  bomb: false
+                                                                                                                  display_token: ! '*'
+                                                                                                                  neighbors:
+                                                                                                                  - *70317855019780
+                                                                                                                  - *70317855017380
+                                                                                                                  - *70317855008140
+                                                                                                                  - &70317855008040 !ruby/object:Square
+                                                                                                                    bomb: false
+                                                                                                                    display_token: ! '*'
+                                                                                                                    neighbors:
+                                                                                                                    - *70317855017380
+                                                                                                                    - *70317855008140
+                                                                                                                    - *70317855007360
+                                                                                                                    - &70317855007280 !ruby/object:Square
+                                                                                                                      bomb: false
+                                                                                                                      display_token: ! '*'
+                                                                                                                      neighbors:
+                                                                                                                      - *70317855008140
+                                                                                                                      - *70317855007360
+                                                                                                                      - *70317855006640
+                                                                                                                      - &70317855006560 !ruby/object:Square
+                                                                                                                        bomb: false
+                                                                                                                        display_token: ! '*'
+                                                                                                                        neighbors:
+                                                                                                                        - *70317855007360
+                                                                                                                        - *70317855006640
+                                                                                                                        - *70317855004800
+                                                                                                                        - &70317855004720 !ruby/object:Square
+                                                                                                                          bomb: false
+                                                                                                                          display_token: ! '*'
+                                                                                                                          neighbors:
+                                                                                                                          - *70317855006640
+                                                                                                                          - *70317855004800
+                                                                                                                          - &70317855004580 !ruby/object:Square
+                                                                                                                            bomb: true
+                                                                                                                            display_token: B
+                                                                                                                            neighbors:
+                                                                                                                            - *70317855006560
+                                                                                                                            - *70317855004720
+                                                                                                                            - &70317855004500 !ruby/object:Square
+                                                                                                                              bomb: false
+                                                                                                                              display_token: ! '*'
+                                                                                                                              neighbors:
+                                                                                                                              - &70317855005640 !ruby/object:Square
+                                                                                                                                bomb: false
+                                                                                                                                display_token: ! '*'
+                                                                                                                                neighbors:
+                                                                                                                                - *70317855007280
+                                                                                                                                - *70317855006560
+                                                                                                                                - *70317855004720
+                                                                                                                                - *70317855004580
+                                                                                                                                - *70317855004500
+                                                                                                                                - &70317855005340 !ruby/object:Square
+                                                                                                                                  bomb: false
+                                                                                                                                  display_token: ! '*'
+                                                                                                                                  neighbors:
+                                                                                                                                  - &70317855007200 !ruby/object:Square
+                                                                                                                                    bomb: true
+                                                                                                                                    display_token: B
+                                                                                                                                    neighbors:
+                                                                                                                                    - *70317855008040
+                                                                                                                                    - *70317855007280
+                                                                                                                                    - *70317855006560
+                                                                                                                                    - *70317855005640
+                                                                                                                                    - *70317855005340
+                                                                                                                                    - &70317855007120 !ruby/object:Square
+                                                                                                                                      bomb: false
+                                                                                                                                      display_token: ! '*'
+                                                                                                                                      neighbors:
+                                                                                                                                      - &70317855007980 !ruby/object:Square
+                                                                                                                                        bomb: false
+                                                                                                                                        display_token: ! '*'
+                                                                                                                                        neighbors:
+                                                                                                                                        - *70317855016860
+                                                                                                                                        - *70317855008040
+                                                                                                                                        - *70317855007280
+                                                                                                                                        - *70317855007200
+                                                                                                                                        - *70317855007120
+                                                                                                                                        - &70317855007900 !ruby/object:Square
+                                                                                                                                          bomb: false
+                                                                                                                                          display_token: ! '*'
+                                                                                                                                          neighbors:
+                                                                                                                                          - &70317855016740 !ruby/object:Square
+                                                                                                                                            bomb: true
+                                                                                                                                            display_token: B
+                                                                                                                                            neighbors:
+                                                                                                                                            - *70317855018540
+                                                                                                                                            - *70317855016860
+                                                                                                                                            - *70317855008040
+                                                                                                                                            - *70317855007980
+                                                                                                                                            - *70317855007900
+                                                                                                                                            - &70317855008680 !ruby/object:Square
+                                                                                                                                              bomb: false
+                                                                                                                                              display_token: ! '*'
+                                                                                                                                              neighbors:
+                                                                                                                                              - &70317855018260 !ruby/object:Square
+                                                                                                                                                bomb: true
+                                                                                                                                                display_token: B
+                                                                                                                                                neighbors:
+                                                                                                                                                - *70317855020480
+                                                                                                                                                - *70317855018540
+                                                                                                                                                - *70317855016860
+                                                                                                                                                - *70317855016740
+                                                                                                                                                - *70317855008680
+                                                                                                                                                - &70317855018140 !ruby/object:Square
+                                                                                                                                                  bomb: false
+                                                                                                                                                  display_token: ! '*'
+                                                                                                                                                  neighbors:
+                                                                                                                                                  - &70317855020400 !ruby/object:Square
+                                                                                                                                                    bomb: false
+                                                                                                                                                    display_token: ! '*'
+                                                                                                                                                    neighbors:
+                                                                                                                                                    - &70317855021280 !ruby/object:Square
+                                                                                                                                                      bomb: false
+                                                                                                                                                      display_token: ! '*'
+                                                                                                                                                      neighbors:
+                                                                                                                                                      - &70317855022140 !ruby/object:Square
+                                                                                                                                                        bomb: false
+                                                                                                                                                        display_token: ! '*'
+                                                                                                                                                        neighbors:
+                                                                                                                                                        - *70317855022220
+                                                                                                                                                        - *70317855021440
+                                                                                                                                                        - *70317855021360
+                                                                                                                                                        - *70317855021280
+                                                                                                                                                        - &70317855022080 !ruby/object:Square
+                                                                                                                                                          bomb: true
+                                                                                                                                                          display_token: B
+                                                                                                                                                          neighbors:
+                                                                                                                                                          - *70317855022140
+                                                                                                                                                          - *70317855021360
+                                                                                                                                                          - *70317855021280
+                                                                                                                                                          - &70317855021200 !ruby/object:Square
+                                                                                                                                                            bomb: false
+                                                                                                                                                            display_token: ! '*'
+                                                                                                                                                            neighbors:
+                                                                                                                                                            - *70317855022080
+                                                                                                                                                            - *70317855021280
+                                                                                                                                                            - *70317855020480
+                                                                                                                                                            - *70317855020400
+                                                                                                                                                            - &70317855020320 !ruby/object:Square
+                                                                                                                                                              bomb: false
+                                                                                                                                                              display_token: ! '*'
+                                                                                                                                                              neighbors:
+                                                                                                                                                              - *70317855021200
+                                                                                                                                                              - *70317855020400
+                                                                                                                                                              - *70317855018260
+                                                                                                                                                              - *70317855018140
+                                                                                                                                                              - &70317855021120 !ruby/object:Square
+                                                                                                                                                                bomb: false
+                                                                                                                                                                display_token: ! '*'
+                                                                                                                                                                neighbors:
+                                                                                                                                                                - &70317855021960 !ruby/object:Square
+                                                                                                                                                                  bomb: false
+                                                                                                                                                                  display_token: ! '*'
+                                                                                                                                                                  neighbors:
+                                                                                                                                                                  - *70317855022080
+                                                                                                                                                                  - *70317855021280
+                                                                                                                                                                  - *70317855021200
+                                                                                                                                                                  - *70317855021120
+                                                                                                                                                                  - &70317855021900 !ruby/object:Square
+                                                                                                                                                                    bomb: false
+                                                                                                                                                                    display_token: ! '*'
+                                                                                                                                                                    neighbors:
+                                                                                                                                                                    - *70317855021960
+                                                                                                                                                                    - *70317855021200
+                                                                                                                                                                    - *70317855021120
+                                                                                                                                                                - *70317855021200
+                                                                                                                                                                - *70317855020400
+                                                                                                                                                                - *70317855020320
+                                                                                                                                                                - *70317855021900
+                                                                                                                                                            - *70317855021120
+                                                                                                                                                            - *70317855021900
+                                                                                                                                                            - *70317855021960
+                                                                                                                                                          - *70317855021960
+                                                                                                                                                      - *70317855021360
+                                                                                                                                                      - *70317855020560
+                                                                                                                                                      - *70317855020480
+                                                                                                                                                      - *70317855020400
+                                                                                                                                                      - *70317855021200
+                                                                                                                                                      - *70317855021960
+                                                                                                                                                      - *70317855022080
+                                                                                                                                                    - *70317855020480
+                                                                                                                                                    - *70317855018540
+                                                                                                                                                    - *70317855018260
+                                                                                                                                                    - *70317855018140
+                                                                                                                                                    - *70317855020320
+                                                                                                                                                    - *70317855021120
+                                                                                                                                                    - *70317855021200
+                                                                                                                                                  - *70317855018260
+                                                                                                                                                  - *70317855016740
+                                                                                                                                                  - *70317855008680
+                                                                                                                                                  - *70317855020320
+                                                                                                                                                - *70317855020320
+                                                                                                                                                - *70317855020400
+                                                                                                                                              - *70317855016740
+                                                                                                                                              - *70317855007980
+                                                                                                                                              - *70317855007900
+                                                                                                                                              - *70317855018140
+                                                                                                                                            - *70317855018140
+                                                                                                                                            - *70317855018260
+                                                                                                                                          - *70317855007980
+                                                                                                                                          - *70317855007200
+                                                                                                                                          - *70317855007120
+                                                                                                                                          - *70317855008680
+                                                                                                                                        - *70317855008680
+                                                                                                                                        - *70317855016740
+                                                                                                                                      - *70317855007200
+                                                                                                                                      - *70317855005640
+                                                                                                                                      - *70317855005340
+                                                                                                                                      - *70317855007900
+                                                                                                                                    - *70317855007900
+                                                                                                                                    - *70317855007980
+                                                                                                                                  - *70317855005640
+                                                                                                                                  - *70317855004580
+                                                                                                                                  - *70317855004500
+                                                                                                                                  - *70317855007120
+                                                                                                                                - *70317855007120
+                                                                                                                                - *70317855007200
+                                                                                                                              - *70317855004580
+                                                                                                                              - *70317855005340
+                                                                                                                            - *70317855005340
+                                                                                                                            - *70317855005640
+                                                                                                                          - *70317855005640
+                                                                                                                          - *70317855006560
+                                                                                                                        - *70317855004580
+                                                                                                                        - *70317855005640
+                                                                                                                        - *70317855007200
+                                                                                                                        - *70317855007280
+                                                                                                                      - *70317855005640
+                                                                                                                      - *70317855007200
+                                                                                                                      - *70317855007980
+                                                                                                                      - *70317855008040
+                                                                                                                    - *70317855007200
+                                                                                                                    - *70317855007980
+                                                                                                                    - *70317855016740
+                                                                                                                    - *70317855016860
+                                                                                                                  - *70317855007980
+                                                                                                                  - *70317855016740
+                                                                                                                  - *70317855018260
+                                                                                                                  - *70317855018540
+                                                                                                                - *70317855016740
+                                                                                                                - *70317855018260
+                                                                                                                - *70317855020400
+                                                                                                                - *70317855020480
+                                                                                                              - *70317855018260
+                                                                                                              - *70317855020400
+                                                                                                              - *70317855021200
+                                                                                                              - *70317855021280
+                                                                                                            - *70317855021280
+                                                                                                            - *70317855022080
+                                                                                                            - *70317855022140
+                                                                                                          - *70317855022140
+                                                                                                      - *70317855021520
+                                                                                                      - *70317855020800
+                                                                                                      - *70317855020680
+                                                                                                      - *70317855020560
+                                                                                                      - *70317855021360
+                                                                                                      - *70317855022140
+                                                                                                      - *70317855022220
+                                                                                                    - *70317855020680
+                                                                                                    - *70317855019900
+                                                                                                    - *70317855019780
+                                                                                                    - *70317855018540
+                                                                                                    - *70317855020480
+                                                                                                    - *70317855021280
+                                                                                                    - *70317855021360
+                                                                                                  - *70317855021360
+                                                                                                  - *70317855021440
+                                                                                                - *70317855019900
+                                                                                                - *70317855017460
+                                                                                                - *70317855017380
+                                                                                                - *70317855016860
+                                                                                                - *70317855018540
+                                                                                                - *70317855020480
+                                                                                                - *70317855020560
+                                                                                              - *70317855020560
+                                                                                              - *70317855020680
+                                                                                            - *70317855017460
+                                                                                            - *70317855008220
+                                                                                            - *70317855008140
+                                                                                            - *70317855008040
+                                                                                            - *70317855016860
+                                                                                            - *70317855018540
+                                                                                            - *70317855019780
+                                                                                          - *70317855019780
+                                                                                          - *70317855019900
+                                                                                        - *70317855008220
+                                                                                        - *70317855007440
+                                                                                        - *70317855007360
+                                                                                        - *70317855007280
+                                                                                        - *70317855008040
+                                                                                        - *70317855016860
+                                                                                        - *70317855017380
+                                                                                      - *70317855017380
+                                                                                      - *70317855017460
+                                                                                    - *70317855007440
+                                                                                    - *70317855006720
+                                                                                    - *70317855006640
+                                                                                    - *70317855006560
+                                                                                    - *70317855007280
+                                                                                    - *70317855008040
+                                                                                    - *70317855008140
+                                                                                  - *70317855008140
+                                                                                  - *70317855008220
+                                                                                - *70317855006720
+                                                                                - *70317855004860
+                                                                                - *70317855004800
+                                                                                - *70317855004720
+                                                                                - *70317855006560
+                                                                                - *70317855007280
+                                                                                - *70317855007360
+                                                                              - *70317855007360
+                                                                              - *70317855007440
+                                                                            - *70317855004860
+                                                                            - *70317855004720
+                                                                            - *70317855006560
+                                                                            - *70317855006640
+                                                                          - *70317855006640
+                                                                          - *70317855006720
+                                                                        - *70317855006720
+                                                                        - *70317855006800
+                                                                      - *70317855004860
+                                                                      - *70317855006720
+                                                                      - *70317855007440
+                                                                      - *70317855007520
+                                                                    - *70317855006720
+                                                                    - *70317855007440
+                                                                    - *70317855008220
+                                                                    - *70317855008320
+                                                                  - *70317855007440
+                                                                  - *70317855008220
+                                                                  - *70317855017460
+                                                                  - *70317855017560
+                                                                - *70317855008220
+                                                                - *70317855017460
+                                                                - *70317855019900
+                                                                - *70317855020000
+                                                              - *70317855017460
+                                                              - *70317855019900
+                                                              - *70317855020680
+                                                              - *70317855020800
+                                                            - *70317855019900
+                                                            - *70317855020680
+                                                            - *70317855021440
+                                                            - *70317855021520
+                                                          - *70317855020680
+                                                          - *70317855021440
+                                                          - *70317855022220
+                                                          - *70317855022460
+                                                        - *70317855022460
+                                                    - *70317855021680
+                                                    - *70317855020960
+                                                    - *70317855020880
+                                                    - *70317855020800
+                                                    - *70317855021520
+                                                    - *70317855022460
+                                                    - *70317855022640
+                                                  - *70317855022640
+                                                  - *70317855023780
+                                                - *70317855020960
+                                                - *70317855020160
+                                                - *70317855020080
+                                                - *70317855020000
+                                                - *70317855020800
+                                                - *70317855021520
+                                                - *70317855021600
+                                              - *70317855021600
+                                              - *70317855021680
+                                            - *70317855020160
+                                            - *70317855017820
+                                            - *70317855017680
+                                            - *70317855017560
+                                            - *70317855020000
+                                            - *70317855020800
+                                            - *70317855020880
+                                          - *70317855020880
+                                          - *70317855020960
+                                        - *70317855017820
+                                        - *70317855008520
+                                        - *70317855008460
+                                        - *70317855008320
+                                        - *70317855017560
+                                        - *70317855020000
+                                        - *70317855020080
+                                      - *70317855020080
+                                      - *70317855020160
+                                    - *70317855008520
+                                    - *70317855007700
+                                    - *70317855007620
+                                    - *70317855007520
+                                    - *70317855008320
+                                    - *70317855017560
+                                    - *70317855017680
+                                  - *70317855017680
+                                  - *70317855017820
+                                - *70317855007700
+                                - *70317855006960
+                                - *70317855006880
+                                - *70317855006800
+                                - *70317855007520
+                                - *70317855008320
+                                - *70317855008460
+                              - *70317855008460
+                              - *70317855008520
+                            - *70317855006960
+                            - *70317855005120
+                            - *70317855005020
+                            - *70317855004940
+                            - *70317855006800
+                            - *70317855007520
+                            - *70317855007620
+                          - *70317855007620
+                          - *70317855007700
+                        - *70317855005120
+                        - *70317855004940
+                        - *70317855006800
+                        - *70317855006880
+                      - *70317855006880
+                      - *70317855006960
+                    - *70317855006960
+                    - *70317855007040
+                  - *70317855005120
+                  - *70317855006960
+                  - *70317855007700
+                  - *70317855007780
+                - *70317855006960
+                - *70317855007700
+                - *70317855008520
+                - *70317855008600
+              - *70317855007700
+              - *70317855008520
+              - *70317855017820
+              - *70317855017980
+            - *70317855008520
+            - *70317855017820
+            - *70317855020160
+            - *70317855020240
+          - *70317855017820
+          - *70317855020160
+          - *70317855020960
+          - *70317855021040
+        - *70317855020160
+        - *70317855020960
+        - *70317855021680
+        - *70317855021780
+      - *70317855020960
+      - *70317855021680
+      - *70317855023780
+      - *70317855023880
+    - *70317855021680
+    - *70317855023780
+  - *70317855023780
+  - *70317855022640
+  - *70317855022460
+  - *70317855022220
+  - *70317855022140
+  - *70317855022080
+  - *70317855021960
+  - *70317855021900
+- - *70317855021780
+  - *70317855021680
+  - *70317855021600
+  - *70317855021520
+  - *70317855021440
+  - *70317855021360
+  - *70317855021280
+  - *70317855021200
+  - *70317855021120
+- - *70317855021040
+  - *70317855020960
+  - *70317855020880
+  - *70317855020800
+  - *70317855020680
+  - *70317855020560
+  - *70317855020480
+  - *70317855020400
+  - *70317855020320
+- - *70317855020240
+  - *70317855020160
+  - *70317855020080
+  - *70317855020000
+  - *70317855019900
+  - *70317855019780
+  - *70317855018540
+  - *70317855018260
+  - *70317855018140
+- - *70317855017980
+  - *70317855017820
+  - *70317855017680
+  - *70317855017560
+  - *70317855017460
+  - *70317855017380
+  - *70317855016860
+  - *70317855016740
+  - *70317855008680
+- - *70317855008600
+  - *70317855008520
+  - *70317855008460
+  - *70317855008320
+  - *70317855008220
+  - *70317855008140
+  - *70317855008040
+  - *70317855007980
+  - *70317855007900
+- - *70317855007780
+  - *70317855007700
+  - *70317855007620
+  - *70317855007520
+  - *70317855007440
+  - *70317855007360
+  - *70317855007280
+  - *70317855007200
+  - *70317855007120
+- - *70317855007040
+  - *70317855006960
+  - *70317855006880
+  - *70317855006800
+  - *70317855006720
+  - *70317855006640
+  - *70317855006560
+  - *70317855005640
+  - *70317855005340
+- - *70317855005200
+  - *70317855005120
+  - *70317855005020
+  - *70317855004940
+  - *70317855004860
+  - *70317855004800
+  - *70317855004720
+  - *70317855004580
+  - *70317855004500
+mine_count: 10
+checked_squares:
+- &70317847604880 !ruby/object:Square
+  bomb: false
+  display_token: ! ' '
+  neighbors:
+  - &70317847600100 !ruby/object:Square
+    bomb: false
+    display_token: ! ' '
+    neighbors:
+    - &70317847599520 !ruby/object:Square
+      bomb: false
+      display_token: '1'
+      neighbors:
+      - &70317847597760 !ruby/object:Square
+        bomb: false
+        display_token: ! '*'
+        neighbors:
+        - &70317847592860 !ruby/object:Square
+          bomb: false
+          display_token: ! '*'
+          neighbors:
+          - &70317847592560 !ruby/object:Square
+            bomb: false
+            display_token: ! '*'
+            neighbors:
+            - &70317847592240 !ruby/object:Square
+              bomb: false
+              display_token: ! '*'
+              neighbors:
+              - &70317847591900 !ruby/object:Square
+                bomb: false
+                display_token: ! '*'
+                neighbors:
+                - &70317847588340 !ruby/object:Square
+                  bomb: false
+                  display_token: ! '*'
+                  neighbors:
+                  - &70317847587960 !ruby/object:Square
+                    bomb: false
+                    display_token: ! '*'
+                    neighbors:
+                    - *70317847591900
+                    - *70317847588340
+                    - &70317847587640 !ruby/object:Square
+                      bomb: false
+                      display_token: ! '*'
+                      neighbors:
+                      - &70317847587320 !ruby/object:Square
+                        bomb: false
+                        display_token: ! '*'
+                        neighbors:
+                        - *70317847592240
+                        - *70317847591900
+                        - *70317847588340
+                        - *70317847587960
+                        - *70317847587640
+                        - &70317847586960 !ruby/object:Square
+                          bomb: false
+                          display_token: ! '*'
+                          neighbors:
+                          - &70317847586660 !ruby/object:Square
+                            bomb: true
+                            display_token: B
+                            neighbors:
+                            - *70317847592560
+                            - *70317847592240
+                            - *70317847591900
+                            - *70317847587320
+                            - *70317847586960
+                            - &70317847581360 !ruby/object:Square
+                              bomb: false
+                              display_token: ! '*'
+                              neighbors:
+                              - &70317847581020 !ruby/object:Square
+                                bomb: false
+                                display_token: ! '*'
+                                neighbors:
+                                - *70317847592860
+                                - *70317847592560
+                                - *70317847592240
+                                - *70317847586660
+                                - *70317847581360
+                                - &70317847580720 !ruby/object:Square
+                                  bomb: false
+                                  display_token: ! '*'
+                                  neighbors:
+                                  - &70317847580380 !ruby/object:Square
+                                    bomb: false
+                                    display_token: ! '*'
+                                    neighbors:
+                                    - *70317847597760
+                                    - *70317847592860
+                                    - *70317847592560
+                                    - *70317847581020
+                                    - *70317847580720
+                                    - &70317847580060 !ruby/object:Square
+                                      bomb: true
+                                      display_token: B
+                                      neighbors:
+                                      - &70317847579720 !ruby/object:Square
+                                        bomb: true
+                                        display_token: B
+                                        neighbors:
+                                        - *70317847599520
+                                        - *70317847597760
+                                        - *70317847592860
+                                        - *70317847580380
+                                        - *70317847580060
+                                        - &70317847579400 !ruby/object:Square
+                                          bomb: false
+                                          display_token: ! '*'
+                                          neighbors:
+                                          - &70317847578980 !ruby/object:Square
+                                            bomb: false
+                                            display_token: '2'
+                                            neighbors:
+                                            - *70317847600100
+                                            - *70317847599520
+                                            - *70317847597760
+                                            - *70317847579720
+                                            - *70317847579400
+                                            - &70317847578660 !ruby/object:Square
+                                              bomb: false
+                                              display_token: ! '*'
+                                              neighbors:
+                                              - &70317847576860 !ruby/object:Square
+                                                bomb: false
+                                                display_token: '1'
+                                                neighbors:
+                                                - *70317847604880
+                                                - *70317847600100
+                                                - *70317847599520
+                                                - *70317847578980
+                                                - *70317847578660
+                                                - &70317847576520 !ruby/object:Square
+                                                  bomb: true
+                                                  display_token: B
+                                                  neighbors:
+                                                  - &70317847576140 !ruby/object:Square
+                                                    bomb: false
+                                                    display_token: '1'
+                                                    neighbors:
+                                                    - *70317847604880
+                                                    - *70317847600100
+                                                    - *70317847576860
+                                                    - *70317847576520
+                                                    - &70317847575640 !ruby/object:Square
+                                                      bomb: false
+                                                      display_token: ! '*'
+                                                      neighbors:
+                                                      - *70317847576140
+                                                      - *70317847576860
+                                                      - *70317847576520
+                                                      - &70317847575140 !ruby/object:Square
+                                                        bomb: false
+                                                        display_token: ! '*'
+                                                        neighbors:
+                                                        - *70317847575640
+                                                        - *70317847576520
+                                                        - *70317847578660
+                                                        - &70317847574680 !ruby/object:Square
+                                                          bomb: false
+                                                          display_token: ! '*'
+                                                          neighbors:
+                                                          - *70317847576520
+                                                          - *70317847578660
+                                                          - *70317847579400
+                                                          - &70317847574340 !ruby/object:Square
+                                                            bomb: false
+                                                            display_token: ! '*'
+                                                            neighbors:
+                                                            - *70317847578660
+                                                            - *70317847579400
+                                                            - *70317847580060
+                                                            - &70317847574020 !ruby/object:Square
+                                                              bomb: false
+                                                              display_token: ! '*'
+                                                              neighbors:
+                                                              - *70317847579400
+                                                              - *70317847580060
+                                                              - *70317847580720
+                                                              - &70317847573700 !ruby/object:Square
+                                                                bomb: false
+                                                                display_token: ! '*'
+                                                                neighbors:
+                                                                - *70317847580060
+                                                                - *70317847580720
+                                                                - *70317847581360
+                                                                - &70317847573400 !ruby/object:Square
+                                                                  bomb: false
+                                                                  display_token: ! '*'
+                                                                  neighbors:
+                                                                  - *70317847580720
+                                                                  - *70317847581360
+                                                                  - *70317847586960
+                                                                  - &70317855155940 !ruby/object:Square
+                                                                    bomb: false
+                                                                    display_token: ! '*'
+                                                                    neighbors:
+                                                                    - *70317847581360
+                                                                    - *70317847586960
+                                                                    - *70317847587640
+                                                                    - &70317855148640 !ruby/object:Square
+                                                                      bomb: false
+                                                                      display_token: ! '*'
+                                                                      neighbors:
+                                                                      - *70317847586960
+                                                                      - *70317847587640
+                                                                      - &70317855148280 !ruby/object:Square
+                                                                        bomb: false
+                                                                        display_token: ! '*'
+                                                                        neighbors:
+                                                                        - *70317855155940
+                                                                        - *70317855148640
+                                                                        - &70317855137200 !ruby/object:Square
+                                                                          bomb: false
+                                                                          display_token: ! '*'
+                                                                          neighbors:
+                                                                          - &70317855136860 !ruby/object:Square
+                                                                            bomb: false
+                                                                            display_token: ! '*'
+                                                                            neighbors:
+                                                                            - *70317847573400
+                                                                            - *70317855155940
+                                                                            - *70317855148640
+                                                                            - *70317855148280
+                                                                            - *70317855137200
+                                                                            - &70317855136560 !ruby/object:Square
+                                                                              bomb: false
+                                                                              display_token: ! '*'
+                                                                              neighbors:
+                                                                              - &70317855135720 !ruby/object:Square
+                                                                                bomb: false
+                                                                                display_token: ! '*'
+                                                                                neighbors:
+                                                                                - *70317847573700
+                                                                                - *70317847573400
+                                                                                - *70317855155940
+                                                                                - *70317855136860
+                                                                                - *70317855136560
+                                                                                - &70317855135040 !ruby/object:Square
+                                                                                  bomb: false
+                                                                                  display_token: ! '*'
+                                                                                  neighbors:
+                                                                                  - &70317855134480 !ruby/object:Square
+                                                                                    bomb: false
+                                                                                    display_token: ! '*'
+                                                                                    neighbors:
+                                                                                    - *70317847574020
+                                                                                    - *70317847573700
+                                                                                    - *70317847573400
+                                                                                    - *70317855135720
+                                                                                    - *70317855135040
+                                                                                    - &70317855133980 !ruby/object:Square
+                                                                                      bomb: false
+                                                                                      display_token: ! '*'
+                                                                                      neighbors:
+                                                                                      - &70317855133480 !ruby/object:Square
+                                                                                        bomb: false
+                                                                                        display_token: ! '*'
+                                                                                        neighbors:
+                                                                                        - *70317847574340
+                                                                                        - *70317847574020
+                                                                                        - *70317847573700
+                                                                                        - *70317855134480
+                                                                                        - *70317855133980
+                                                                                        - &70317855133000 !ruby/object:Square
+                                                                                          bomb: false
+                                                                                          display_token: ! '*'
+                                                                                          neighbors:
+                                                                                          - &70317855132520 !ruby/object:Square
+                                                                                            bomb: false
+                                                                                            display_token: ! '*'
+                                                                                            neighbors:
+                                                                                            - *70317847574680
+                                                                                            - *70317847574340
+                                                                                            - *70317847574020
+                                                                                            - *70317855133480
+                                                                                            - *70317855133000
+                                                                                            - &70317855131940 !ruby/object:Square
+                                                                                              bomb: false
+                                                                                              display_token: ! '*'
+                                                                                              neighbors:
+                                                                                              - &70317855131240 !ruby/object:Square
+                                                                                                bomb: false
+                                                                                                display_token: ! '*'
+                                                                                                neighbors:
+                                                                                                - *70317847575140
+                                                                                                - *70317847574680
+                                                                                                - *70317847574340
+                                                                                                - *70317855132520
+                                                                                                - *70317855131940
+                                                                                                - &70317855130560 !ruby/object:Square
+                                                                                                  bomb: false
+                                                                                                  display_token: ! '*'
+                                                                                                  neighbors:
+                                                                                                  - &70317855130080 !ruby/object:Square
+                                                                                                    bomb: false
+                                                                                                    display_token: ! '*'
+                                                                                                    neighbors:
+                                                                                                    - &70317855129560 !ruby/object:Square
+                                                                                                      bomb: false
+                                                                                                      display_token: ! '*'
+                                                                                                      neighbors:
+                                                                                                      - *70317847575640
+                                                                                                      - *70317847576520
+                                                                                                      - *70317847575140
+                                                                                                      - *70317855130080
+                                                                                                      - &70317855128940 !ruby/object:Square
+                                                                                                        bomb: false
+                                                                                                        display_token: ! '*'
+                                                                                                        neighbors:
+                                                                                                        - *70317855129560
+                                                                                                        - *70317847575140
+                                                                                                        - *70317855130080
+                                                                                                        - &70317855128380 !ruby/object:Square
+                                                                                                          bomb: true
+                                                                                                          display_token: B
+                                                                                                          neighbors:
+                                                                                                          - *70317855128940
+                                                                                                          - *70317855130080
+                                                                                                          - *70317855131240
+                                                                                                          - *70317855130560
+                                                                                                          - &70317855128060 !ruby/object:Square
+                                                                                                            bomb: false
+                                                                                                            display_token: ! '*'
+                                                                                                            neighbors:
+                                                                                                            - *70317855128380
+                                                                                                            - *70317855130560
+                                                                                                            - *70317855131940
+                                                                                                            - &70317855127660 !ruby/object:Square
+                                                                                                              bomb: true
+                                                                                                              display_token: B
+                                                                                                              neighbors:
+                                                                                                              - *70317855130560
+                                                                                                              - *70317855131940
+                                                                                                              - *70317855133000
+                                                                                                              - &70317855117960 !ruby/object:Square
+                                                                                                                bomb: false
+                                                                                                                display_token: ! '*'
+                                                                                                                neighbors:
+                                                                                                                - *70317855131940
+                                                                                                                - *70317855133000
+                                                                                                                - *70317855133980
+                                                                                                                - &70317855117420 !ruby/object:Square
+                                                                                                                  bomb: false
+                                                                                                                  display_token: ! '*'
+                                                                                                                  neighbors:
+                                                                                                                  - *70317855133000
+                                                                                                                  - *70317855133980
+                                                                                                                  - *70317855135040
+                                                                                                                  - &70317855117120 !ruby/object:Square
+                                                                                                                    bomb: false
+                                                                                                                    display_token: ! '*'
+                                                                                                                    neighbors:
+                                                                                                                    - *70317855133980
+                                                                                                                    - *70317855135040
+                                                                                                                    - *70317855136560
+                                                                                                                    - &70317855116780 !ruby/object:Square
+                                                                                                                      bomb: false
+                                                                                                                      display_token: ! '*'
+                                                                                                                      neighbors:
+                                                                                                                      - *70317855135040
+                                                                                                                      - *70317855136560
+                                                                                                                      - *70317855137200
+                                                                                                                      - &70317855116160 !ruby/object:Square
+                                                                                                                        bomb: false
+                                                                                                                        display_token: ! '*'
+                                                                                                                        neighbors:
+                                                                                                                        - *70317855136560
+                                                                                                                        - *70317855137200
+                                                                                                                        - &70317855115840 !ruby/object:Square
+                                                                                                                          bomb: false
+                                                                                                                          display_token: ! '*'
+                                                                                                                          neighbors:
+                                                                                                                          - *70317855116780
+                                                                                                                          - *70317855116160
+                                                                                                                          - &70317855115540 !ruby/object:Square
+                                                                                                                            bomb: false
+                                                                                                                            display_token: ! '*'
+                                                                                                                            neighbors:
+                                                                                                                            - &70317855114900 !ruby/object:Square
+                                                                                                                              bomb: true
+                                                                                                                              display_token: B
+                                                                                                                              neighbors:
+                                                                                                                              - *70317855117120
+                                                                                                                              - *70317855116780
+                                                                                                                              - *70317855116160
+                                                                                                                              - *70317855115840
+                                                                                                                              - *70317855115540
+                                                                                                                              - &70317855114600 !ruby/object:Square
+                                                                                                                                bomb: true
+                                                                                                                                display_token: B
+                                                                                                                                neighbors:
+                                                                                                                                - &70317855114320 !ruby/object:Square
+                                                                                                                                  bomb: false
+                                                                                                                                  display_token: ! '*'
+                                                                                                                                  neighbors:
+                                                                                                                                  - *70317855117420
+                                                                                                                                  - *70317855117120
+                                                                                                                                  - *70317855116780
+                                                                                                                                  - *70317855114900
+                                                                                                                                  - *70317855114600
+                                                                                                                                  - &70317855113740 !ruby/object:Square
+                                                                                                                                    bomb: false
+                                                                                                                                    display_token: ! '*'
+                                                                                                                                    neighbors:
+                                                                                                                                    - &70317855113440 !ruby/object:Square
+                                                                                                                                      bomb: false
+                                                                                                                                      display_token: ! '*'
+                                                                                                                                      neighbors:
+                                                                                                                                      - *70317855117960
+                                                                                                                                      - *70317855117420
+                                                                                                                                      - *70317855117120
+                                                                                                                                      - *70317855114320
+                                                                                                                                      - *70317855113740
+                                                                                                                                      - &70317855113140 !ruby/object:Square
+                                                                                                                                        bomb: false
+                                                                                                                                        display_token: ! '*'
+                                                                                                                                        neighbors:
+                                                                                                                                        - &70317855112760 !ruby/object:Square
+                                                                                                                                          bomb: false
+                                                                                                                                          display_token: ! '*'
+                                                                                                                                          neighbors:
+                                                                                                                                          - *70317855127660
+                                                                                                                                          - *70317855117960
+                                                                                                                                          - *70317855117420
+                                                                                                                                          - *70317855113440
+                                                                                                                                          - *70317855113140
+                                                                                                                                          - &70317855102540 !ruby/object:Square
+                                                                                                                                            bomb: false
+                                                                                                                                            display_token: ! '*'
+                                                                                                                                            neighbors:
+                                                                                                                                            - &70317855102120 !ruby/object:Square
+                                                                                                                                              bomb: false
+                                                                                                                                              display_token: ! '*'
+                                                                                                                                              neighbors:
+                                                                                                                                              - *70317855128060
+                                                                                                                                              - *70317855127660
+                                                                                                                                              - *70317855117960
+                                                                                                                                              - *70317855112760
+                                                                                                                                              - *70317855102540
+                                                                                                                                              - &70317855101320 !ruby/object:Square
+                                                                                                                                                bomb: false
+                                                                                                                                                display_token: ! '*'
+                                                                                                                                                neighbors:
+                                                                                                                                                - &70317855100500 !ruby/object:Square
+                                                                                                                                                  bomb: false
+                                                                                                                                                  display_token: ! '*'
+                                                                                                                                                  neighbors:
+                                                                                                                                                  - &70317855100060 !ruby/object:Square
+                                                                                                                                                    bomb: false
+                                                                                                                                                    display_token: ! '*'
+                                                                                                                                                    neighbors:
+                                                                                                                                                    - &70317855099420 !ruby/object:Square
+                                                                                                                                                      bomb: false
+                                                                                                                                                      display_token: ! '*'
+                                                                                                                                                      neighbors:
+                                                                                                                                                      - *70317855128940
+                                                                                                                                                      - *70317855130080
+                                                                                                                                                      - *70317855128380
+                                                                                                                                                      - *70317855100060
+                                                                                                                                                      - &70317855098580 !ruby/object:Square
+                                                                                                                                                        bomb: false
+                                                                                                                                                        display_token: ! '*'
+                                                                                                                                                        neighbors:
+                                                                                                                                                        - *70317855099420
+                                                                                                                                                        - *70317855128380
+                                                                                                                                                        - *70317855100060
+                                                                                                                                                        - &70317855098280 !ruby/object:Square
+                                                                                                                                                          bomb: false
+                                                                                                                                                          display_token: ! '*'
+                                                                                                                                                          neighbors:
+                                                                                                                                                          - *70317855098580
+                                                                                                                                                          - *70317855100060
+                                                                                                                                                          - *70317855128060
+                                                                                                                                                          - *70317855100500
+                                                                                                                                                          - &70317855097960 !ruby/object:Square
+                                                                                                                                                            bomb: false
+                                                                                                                                                            display_token: ! '*'
+                                                                                                                                                            neighbors:
+                                                                                                                                                            - *70317855098280
+                                                                                                                                                            - *70317855100500
+                                                                                                                                                            - *70317855102120
+                                                                                                                                                            - *70317855101320
+                                                                                                                                                            - &70317855097640 !ruby/object:Square
+                                                                                                                                                              bomb: true
+                                                                                                                                                              display_token: B
+                                                                                                                                                              neighbors:
+                                                                                                                                                              - &70317855097320 !ruby/object:Square
+                                                                                                                                                                bomb: true
+                                                                                                                                                                display_token: B
+                                                                                                                                                                neighbors:
+                                                                                                                                                                - *70317855098580
+                                                                                                                                                                - *70317855100060
+                                                                                                                                                                - *70317855098280
+                                                                                                                                                                - *70317855097640
+                                                                                                                                                                - &70317855097020 !ruby/object:Square
+                                                                                                                                                                  bomb: false
+                                                                                                                                                                  display_token: ! '*'
+                                                                                                                                                                  neighbors:
+                                                                                                                                                                  - *70317855097320
+                                                                                                                                                                  - *70317855098280
+                                                                                                                                                                  - *70317855097640
+                                                                                                                                                              - *70317855098280
+                                                                                                                                                              - *70317855100500
+                                                                                                                                                              - *70317855097960
+                                                                                                                                                              - *70317855097020
+                                                                                                                                                          - *70317855097640
+                                                                                                                                                          - *70317855097020
+                                                                                                                                                          - *70317855097320
+                                                                                                                                                        - *70317855097320
+                                                                                                                                                    - *70317855128380
+                                                                                                                                                    - *70317855130560
+                                                                                                                                                    - *70317855128060
+                                                                                                                                                    - *70317855100500
+                                                                                                                                                    - *70317855098280
+                                                                                                                                                    - *70317855097320
+                                                                                                                                                    - *70317855098580
+                                                                                                                                                  - *70317855128060
+                                                                                                                                                  - *70317855127660
+                                                                                                                                                  - *70317855102120
+                                                                                                                                                  - *70317855101320
+                                                                                                                                                  - *70317855097960
+                                                                                                                                                  - *70317855097640
+                                                                                                                                                  - *70317855098280
+                                                                                                                                                - *70317855102120
+                                                                                                                                                - *70317855112760
+                                                                                                                                                - *70317855102540
+                                                                                                                                                - *70317855097960
+                                                                                                                                              - *70317855097960
+                                                                                                                                              - *70317855100500
+                                                                                                                                            - *70317855112760
+                                                                                                                                            - *70317855113440
+                                                                                                                                            - *70317855113140
+                                                                                                                                            - *70317855101320
+                                                                                                                                          - *70317855101320
+                                                                                                                                          - *70317855102120
+                                                                                                                                        - *70317855113440
+                                                                                                                                        - *70317855114320
+                                                                                                                                        - *70317855113740
+                                                                                                                                        - *70317855102540
+                                                                                                                                      - *70317855102540
+                                                                                                                                      - *70317855112760
+                                                                                                                                    - *70317855114320
+                                                                                                                                    - *70317855114900
+                                                                                                                                    - *70317855114600
+                                                                                                                                    - *70317855113140
+                                                                                                                                  - *70317855113140
+                                                                                                                                  - *70317855113440
+                                                                                                                                - *70317855114900
+                                                                                                                                - *70317855115840
+                                                                                                                                - *70317855115540
+                                                                                                                                - *70317855113740
+                                                                                                                              - *70317855113740
+                                                                                                                              - *70317855114320
+                                                                                                                            - *70317855115840
+                                                                                                                            - *70317855114600
+                                                                                                                          - *70317855114600
+                                                                                                                          - *70317855114900
+                                                                                                                        - *70317855114900
+                                                                                                                        - *70317855116780
+                                                                                                                      - *70317855115840
+                                                                                                                      - *70317855114900
+                                                                                                                      - *70317855114320
+                                                                                                                      - *70317855117120
+                                                                                                                    - *70317855114900
+                                                                                                                    - *70317855114320
+                                                                                                                    - *70317855113440
+                                                                                                                    - *70317855117420
+                                                                                                                  - *70317855114320
+                                                                                                                  - *70317855113440
+                                                                                                                  - *70317855112760
+                                                                                                                  - *70317855117960
+                                                                                                                - *70317855113440
+                                                                                                                - *70317855112760
+                                                                                                                - *70317855102120
+                                                                                                                - *70317855127660
+                                                                                                              - *70317855112760
+                                                                                                              - *70317855102120
+                                                                                                              - *70317855100500
+                                                                                                              - *70317855128060
+                                                                                                            - *70317855102120
+                                                                                                            - *70317855100500
+                                                                                                            - *70317855098280
+                                                                                                            - *70317855100060
+                                                                                                          - *70317855100060
+                                                                                                          - *70317855098580
+                                                                                                          - *70317855099420
+                                                                                                        - *70317855099420
+                                                                                                    - *70317847575140
+                                                                                                    - *70317847574680
+                                                                                                    - *70317855131240
+                                                                                                    - *70317855130560
+                                                                                                    - *70317855128380
+                                                                                                    - *70317855099420
+                                                                                                    - *70317855128940
+                                                                                                  - *70317855131240
+                                                                                                  - *70317855132520
+                                                                                                  - *70317855131940
+                                                                                                  - *70317855127660
+                                                                                                  - *70317855128060
+                                                                                                  - *70317855100060
+                                                                                                  - *70317855128380
+                                                                                                - *70317855128380
+                                                                                                - *70317855130080
+                                                                                              - *70317855132520
+                                                                                              - *70317855133480
+                                                                                              - *70317855133000
+                                                                                              - *70317855117960
+                                                                                              - *70317855127660
+                                                                                              - *70317855128060
+                                                                                              - *70317855130560
+                                                                                            - *70317855130560
+                                                                                            - *70317855131240
+                                                                                          - *70317855133480
+                                                                                          - *70317855134480
+                                                                                          - *70317855133980
+                                                                                          - *70317855117420
+                                                                                          - *70317855117960
+                                                                                          - *70317855127660
+                                                                                          - *70317855131940
+                                                                                        - *70317855131940
+                                                                                        - *70317855132520
+                                                                                      - *70317855134480
+                                                                                      - *70317855135720
+                                                                                      - *70317855135040
+                                                                                      - *70317855117120
+                                                                                      - *70317855117420
+                                                                                      - *70317855117960
+                                                                                      - *70317855133000
+                                                                                    - *70317855133000
+                                                                                    - *70317855133480
+                                                                                  - *70317855135720
+                                                                                  - *70317855136860
+                                                                                  - *70317855136560
+                                                                                  - *70317855116780
+                                                                                  - *70317855117120
+                                                                                  - *70317855117420
+                                                                                  - *70317855133980
+                                                                                - *70317855133980
+                                                                                - *70317855134480
+                                                                              - *70317855136860
+                                                                              - *70317855148280
+                                                                              - *70317855137200
+                                                                              - *70317855116160
+                                                                              - *70317855116780
+                                                                              - *70317855117120
+                                                                              - *70317855135040
+                                                                            - *70317855135040
+                                                                            - *70317855135720
+                                                                          - *70317855148280
+                                                                          - *70317855116160
+                                                                          - *70317855116780
+                                                                          - *70317855136560
+                                                                        - *70317855136560
+                                                                        - *70317855136860
+                                                                      - *70317855136860
+                                                                      - *70317855155940
+                                                                    - *70317855148280
+                                                                    - *70317855136860
+                                                                    - *70317855135720
+                                                                    - *70317847573400
+                                                                  - *70317855136860
+                                                                  - *70317855135720
+                                                                  - *70317855134480
+                                                                  - *70317847573700
+                                                                - *70317855135720
+                                                                - *70317855134480
+                                                                - *70317855133480
+                                                                - *70317847574020
+                                                              - *70317855134480
+                                                              - *70317855133480
+                                                              - *70317855132520
+                                                              - *70317847574340
+                                                            - *70317855133480
+                                                            - *70317855132520
+                                                            - *70317855131240
+                                                            - *70317847574680
+                                                          - *70317855132520
+                                                          - *70317855131240
+                                                          - *70317855130080
+                                                          - *70317847575140
+                                                        - *70317855131240
+                                                        - *70317855130080
+                                                        - *70317855128940
+                                                        - *70317855129560
+                                                      - *70317855129560
+                                                  - *70317847576860
+                                                  - *70317847578980
+                                                  - *70317847578660
+                                                  - *70317847574680
+                                                  - *70317847575140
+                                                  - *70317855129560
+                                                  - *70317847575640
+                                                - *70317847575640
+                                                - *70317847576140
+                                              - *70317847578980
+                                              - *70317847579720
+                                              - *70317847579400
+                                              - *70317847574340
+                                              - *70317847574680
+                                              - *70317847575140
+                                              - *70317847576520
+                                            - *70317847576520
+                                            - *70317847576860
+                                          - *70317847579720
+                                          - *70317847580380
+                                          - *70317847580060
+                                          - *70317847574020
+                                          - *70317847574340
+                                          - *70317847574680
+                                          - *70317847578660
+                                        - *70317847578660
+                                        - *70317847578980
+                                      - *70317847580380
+                                      - *70317847581020
+                                      - *70317847580720
+                                      - *70317847573700
+                                      - *70317847574020
+                                      - *70317847574340
+                                      - *70317847579400
+                                    - *70317847579400
+                                    - *70317847579720
+                                  - *70317847581020
+                                  - *70317847586660
+                                  - *70317847581360
+                                  - *70317847573400
+                                  - *70317847573700
+                                  - *70317847574020
+                                  - *70317847580060
+                                - *70317847580060
+                                - *70317847580380
+                              - *70317847586660
+                              - *70317847587320
+                              - *70317847586960
+                              - *70317855155940
+                              - *70317847573400
+                              - *70317847573700
+                              - *70317847580720
+                            - *70317847580720
+                            - *70317847581020
+                          - *70317847587320
+                          - *70317847587960
+                          - *70317847587640
+                          - *70317855148640
+                          - *70317855155940
+                          - *70317847573400
+                          - *70317847581360
+                        - *70317847581360
+                        - *70317847586660
+                      - *70317847587960
+                      - *70317855148640
+                      - *70317855155940
+                      - *70317847586960
+                    - *70317847586960
+                    - *70317847587320
+                  - *70317847587320
+                  - *70317847591900
+                - *70317847587960
+                - *70317847587320
+                - *70317847586660
+                - *70317847592240
+              - *70317847587320
+              - *70317847586660
+              - *70317847581020
+              - *70317847592560
+            - *70317847586660
+            - *70317847581020
+            - *70317847580380
+            - *70317847592860
+          - *70317847581020
+          - *70317847580380
+          - *70317847579720
+          - *70317847597760
+        - *70317847580380
+        - *70317847579720
+        - *70317847578980
+        - *70317847599520
+      - *70317847579720
+      - *70317847578980
+      - *70317847576860
+      - *70317847600100
+    - *70317847578980
+    - *70317847576860
+    - *70317847576140
+    - *70317847604880
+  - *70317847576860
+  - *70317847576140
+- *70317847600100
+- *70317847599520
+- *70317847578980
+- *70317847576860
+- *70317847576140
+bomb_locs:
+- *70317855097320
+- *70317847579720
+- *70317847576520
+- *70317855127660
+- *70317847586660
+- *70317855114600
+- *70317855097640
+- *70317855128380
+- *70317847580060
+- *70317855114900
+- *70317855004580
+- *70317855016740
+- *70317855007200
+- *70317855022080
+- *70317855018260
+- *70317855008520
+- *70317855007040
+- *70317855017380
+- *70317855007780
+- *70317855020560
+score_board: []
