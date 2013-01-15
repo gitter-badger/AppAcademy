@@ -1,6 +1,5 @@
 class Square
-	attr_reader :display_token
-	attr_writer :neighbors, :bomb
+	attr_accessor :neighbors, :display_token, :bomb
 
 	def initialize(bomb = false)
 		@bomb = bomb
@@ -11,19 +10,6 @@ class Square
 	def bomb?
 		@bomb
 	end
-
-	def reveal_neighbors
-		if self.bomb?
-			return true
-		else
-			near_bombs = @neighbors.select do |neighbor|
-				neighbor.neighbors.delete_if { |el| el==self }
-				neighbor.nil? ? false : neighbor.reveal_neighbors==true
-			end
-			@display_token = near_bombs.size>0 ? near_bombs.size.to_s : ' '
-			return false
-		end
-	end
 end
 
 class Gameboard
@@ -32,7 +18,44 @@ class Gameboard
 	def initialize(board_size, number_of_mines)
 		@board_size, @mine_count = board_size, number_of_mines
 		@gameboard = Array.new(board_size) {Array.new(board_size) {nil}}
+		@checked_squares = []
+		@bomb_locs = []
 
+		build_board
+		create_bombs
+	end
+
+	def play
+		while true
+			print_board
+			user_move = interface
+			pos = user_move[1..-1].strip.split(',').map { |el| el.to_i }
+			case user_move[0]
+			when 'r'
+				reveal_neighbors(@gameboard[pos[0]][pos[1]])
+			when 'f'
+				flag(@gameboard[pos[0]][pos[1]])
+			else
+				puts "Not a valid command, try again."
+				redo
+			end
+
+		end
+	end
+
+	def flag(square)
+		square.display_token = 'F'
+	end
+
+	def won?
+		(@checked_squares+@bomb_locs).size == board_size**2
+	end
+
+	def interface
+		puts "[F to flag, R to reveal] (row, column)"
+		puts "Choose a move (ex. r 0,2):"
+		print "> "
+		gets.chomp.downcase
 	end
 
 	def build_board
@@ -49,6 +72,16 @@ class Gameboard
 			end
 		end
 		puts "done"
+	end
+
+	def create_bombs
+		@mine_count.times do
+			square = @gameboard.sample.sample
+			redo if @bomb_locs.include?(square)
+			square.bomb = true
+			square.display_token = "B"
+			@bomb_locs << square
+		end
 	end
 
 	def set_neighbors(square, y, x)
@@ -73,9 +106,32 @@ class Gameboard
 		end
 	end
 
-	def get_input
-		puts "Where would you like to try? (row, column)"
-		input = gets.chomp.split(',').map { |el| el.to_i }
-		@gameboard[input[0]][input[1]].reveal_neighbors
+	def reveal_neighbors(square)
+		if square.bomb?
+			return true
+		else
+			@checked_squares << square
+			near_bombs = 0
+			square.neighbors.each do |neighbor|
+				if neighbor.bomb?
+					near_bombs+=1
+				end
+			end
+			if near_bombs == 0
+				square.neighbors.each do |neighbor|
+					unless (@checked_squares.include?(neighbor) ||
+						neighbor.display_token=="F")
+						reveal_neighbors(neighbor)
+					end
+				end
+			end
+
+			square.display_token = near_bombs > 0 ? near_bombs.to_s : ' '
+			return false
+		end
 	end
 end
+
+# run script
+g = Gameboard.new(9,10)
+g.play
