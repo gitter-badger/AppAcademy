@@ -30,20 +30,15 @@ class Gameboard
 
 	def initialize(board_size, number_of_mines)
 		@board_size, @mine_count = board_size, number_of_mines
-		@gameboard = Array.new(board_size, Array.new(board_size,nil))
+		@gameboard = Array.new(board_size) {Array.new(board_size) {nil}}
+
 	end
 
 	def build_board
 		# first put a square in each spot
-		# @gameboard.map! do |row|
-		# 	row.map! do |column|
-		# 		column = Square.new
-		# 	end
-		# end
-		@gameboard.each_with_index do |row, y|
-			row.each_with_index do |square, x|
-				puts "#{y},#{x}"
-				@gameboard[x][y]= Square.new
+		@gameboard.map! do |row|
+			row.map! do |column|
+				column = Square.new
 			end
 		end
 		# then set each square's neighbors
@@ -59,16 +54,10 @@ class Gameboard
 		# for each of the 8 surrounding position, check to see if it
 		# falls inside the board. if it does, add the square at that
 		# position to the current square's neighbors array
-		#count = 0
 		[[-1,-1],[0,-1],[1,-1],[1,0],[1,1],[0,1],[-1,1],[-1,0]].each do |cords|
-			#print count
-			#count += 1
 			next if (y+cords[0] <0 || y+cords[0] == @board_size ||
 					x+cords[1] <0 || x+cords[1] == @board_size)
 			square.neighbors << @gameboard[y+cords[0]][x+cords[1]]
-			#p square.neighbors.size
 		end
-		#square.neighbors.uniq!
-		#puts
 	end
 end
