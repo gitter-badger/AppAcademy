@@ -1,6 +1,6 @@
 class Square
-	attr_reader :bomb
-	attr_accessor :neighbors
+	attr_reader :display_token
+	attr_writer :neighbors, :bomb
 
 	def initialize(bomb = false)
 		@bomb = bomb
@@ -17,7 +17,8 @@ class Square
 			return true
 		else
 			near_bombs = @neighbors.select do |neighbor|
-				neighbor.nil? ? false : reveal_neighbors(neighbor)==true
+				neighbor.neighbors.delete_if { |el| el==self }
+				neighbor.nil? ? false : neighbor.reveal_neighbors==true
 			end
 			@display_token = near_bombs.size>0 ? near_bombs.size.to_s : ' '
 			return false
@@ -59,5 +60,22 @@ class Gameboard
 					x+cords[1] <0 || x+cords[1] == @board_size)
 			square.neighbors << @gameboard[y+cords[0]][x+cords[1]]
 		end
+	end
+
+	def print_board
+		puts "  #{(0...@board_size).to_a.join(' ')}"
+		(0...@board_size).each do |y|
+			print "#{y} "
+			(0...@board_size).each do |x|
+				print "#{@gameboard[y][x].display_token} "
+			end
+			puts
+		end
+	end
+
+	def get_input
+		puts "Where would you like to try? (row, column)"
+		input = gets.chomp.split(',').map { |el| el.to_i }
+		@gameboard[input[0]][input[1]].reveal_neighbors
 	end
 end
