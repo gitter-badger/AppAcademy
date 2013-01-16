@@ -41,7 +41,7 @@ class Wordchain
   end
 
 
-  def find_next_level(set) 
+  def find_next_level(set)
     return_hash = {}
     set.each do |word, value|
       new_array = adjacent_words(word, @candidates)

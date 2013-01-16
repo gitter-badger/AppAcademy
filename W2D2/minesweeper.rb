@@ -9,20 +9,22 @@ require 'yaml'
     @placed_mines = 0
     @correct_flags = 0
     @flags = 0
-    create_board
+    @mines = 0
   end
 
   def start
     puts "Welcome to Bombsweeper\u2122!"
     puts "Type <new> to start a new game or <continue> to... well... continue."
     start_input = gets.chomp
-    if start_input == "new"
-      run
-    else
+    if start_input == "continue"
       game_state = YAML.load(File.read('save_game.txt'))
       game_state.run
+    else
+      puts "Choose <easy> or <hard> difficulty."
+      @difficulty = gets.chomp
+      create_board
+      run
     end
-
   end
 
   def run
@@ -132,19 +134,19 @@ require 'yaml'
       end
       puts "#{index}  #{display_row}"
     end
-    @game_board[8].each_with_index do |row, index|
+    @game_board[0].each_with_index do |row, index|
       bottom_row << "#{index.to_s} "
     end
     puts
     puts bottom_row
   end
 
-  def hide_mines(mines)
-    while @placed_mines < mines
-      placement_row = rand(9)
-      placement_column = rand(9)
+  def hide_mines
+    while @placed_mines < @mines
+      placement_row = rand(@rows)
+      placement_column = rand(@rows)
       if @game_board[placement_row][placement_column].is_bomb?
-        hide_mines(mines)
+        hide_mines
       else
         @game_board[placement_row][placement_column].give_bomb
         @placed_mines += 1
@@ -153,17 +155,35 @@ require 'yaml'
   end
 
   def create_board
-    puts "Eventually I'll ask what difficulty..."
-      @game_board = []
-      9.times do |index1|
-        row = []
-        9.times do |index2|
-          row << Tile.new(index1, index2)
+    if @difficulty == "easy"
+        @mines = 10
+        @rows = 9
+        @columns = 9
+        @game_board = []
+        9.times do |index1|
+          row = []
+          9.times do |index2|
+            row << Tile.new(index1, index2)
+          end
+          @game_board << row
         end
-        @game_board << row
+        @game_board
+        hide_mines
+      else
+        @mines = 40
+        @rows = 16
+        @columns = 16
+        @game_board = []
+        16.times do |index1|
+          row = []
+          16.times do |index2|
+            row << Tile.new(index1, index2)
+          end
+          @game_board << row
+        end
+        @game_board
+        hide_mines
       end
-      @game_board
-      hide_mines(10) #this parameter will be different in harder difficulty.
   end
 
   def clear_adjacent(tile)
