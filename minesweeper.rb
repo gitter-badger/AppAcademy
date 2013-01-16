@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+require 'YAML'
+
 class Square
 	attr_accessor :neighbors, :display_token, :bomb
 
@@ -13,7 +16,7 @@ class Square
 end
 
 class Gameboard
-	attr_reader :gameboard
+	attr_reader :time
 
 	def initialize(board_size, number_of_mines, player_name)
 		@board_size, @mine_count = board_size, number_of_mines
@@ -21,26 +24,32 @@ class Gameboard
 		@gameboard = Array.new(board_size) {Array.new(board_size) {nil}}
 		@checked_squares = []
 		@bomb_locs = []
+		@time = 0
 		build_board
 		create_bombs
 	end
 
 	def play
-		time = Time.now
+		start_time = Time.now
 		while true
 			print_board
 			user_move = get_input
 			pos = user_move[1..-1].strip.split(',').map { |el| el.to_i }
+			if @checked_squares.include?(@gameboard[pos[0]][pos[1]])
+				puts "Checked already, try again."
+				redo
+			end
 			case user_move[0]
 			when 'r'
 				if @gameboard[pos[0]][pos[1]].bomb?
-					game_lost
-					break
+					puts "Sorry, you hit a bomb."
+					return false
 				end
 				reveal_neighbors(@gameboard[pos[0]][pos[1]])
 			when 'f'
 				flag(@gameboard[pos[0]][pos[1]])
 			when 's'
+				@time = Time.now - start_time
 				file = File.open("#{@player_name}_savegame",'w')
 				file.write(self.to_yaml)
 				file.close
@@ -51,26 +60,13 @@ class Gameboard
 				redo
 			end
 			if won
-				game_won(time, player_name)
-				break
+				puts "You won! Good job!"
+				return true
 			end
 		end
 	end
 
 	private
-
-	def game_lost
-		puts "Sorry, you hit a bomb!"
-	end
-
-	def game_won(time, player_name)
-		time = Time.now - time
-		puts "You won! Good job!"
-		puts "Game took #{time} seconds."
-		@score_board << {:player => player_name, :time => time}
-		@score_board.sort! {|a,b| b[:time] <=> a[:time]}
-		@score_board = @score_board[0...10]
-	end
 
 	def flag(square)
 		square.display_token = 'F'
@@ -181,26 +177,54 @@ class Gameboard
 	end
 end
 
-# run script
-puts "What's your name?"
-name = gets.chomp
-puts "Would you like to load your previous save? (y/n)"
-answer = gets.chomp.downcase[0]
-game_state = nil
-if answer == 'y'
-	begin
-		game_state = YAML::load(File.read("#{name}_savegame"))
-	rescue Errno::ENOENT
-		puts "Savegame doesn't exist, continuing without it."
+def get_name
+	puts "What's your name?"
+	gets.chomp
+end
+
+def load_game(name)
+	puts "Would you like to load your previous save? (y/n)"
+	answer = gets.chomp.downcase[0]
+	if answer == 'y'
+		begin
+			game_state = YAML::load(File.read("#{name}_savegame"))
+		rescue Errno::ENOENT
+			puts "Savegame doesn't exist, continuing without it.\n"
+			game_state = Gameboard.new(9,10,name)
+		end
+	else
 		game_state = Gameboard.new(9,10,name)
 	end
+	game_state
 end
-game_state.play
 
-# YAML::load(File.read('scoreboard'))
-# puts "\nScoreboard:"
-# puts "-----------"
-# score_board.each do |score|
-# 	puts "#{score[:player]} : #{score[:time]} seconds."
-# end
-# puts
+def scoreboard(time, name)
+	begin
+		score_board = YAML::load(File.read('scoreboard'))
+	rescue Errno::ENOENT
+		score_board = []
+	end
+	score_board += [{:player => name, :time => time}]
+	score_board.sort! { |a,b| a[:time] <=> b[:time]}
+	score_board = score_board[0...10]
+	file = File.open('scoreboard','w')
+	file.write(score_board.to_yaml)
+	file.close
+	puts "\nScoreboard:"
+	puts "-----------"
+	score_board.each do |score|
+		puts "#{score[:player]} : #{score[:time]} seconds."
+	end
+	puts
+end
+
+if __FILE__ == $PROGRAM_NAME
+	name = get_name
+	game = load_game(name)
+
+	time = Time.now
+	if game.play
+		time = Time.now - time + game.time
+		scoreboard(time, name)
+	end
+end
