@@ -5,10 +5,17 @@ class Square
 	attr_accessor :neighbors, :display_token, :bomb
 
 	def initialize(bomb = false)
+		#you're repeating yourself by saying the 
+		#default state is bomb, and then setting 
+		#@bomb to the argument. Just say @bomb = false
+		#on line 12 \/ (unless you ever initialize differently)
 		@bomb = bomb
 		@display_token = '*'
 		@neighbors = []
 	end
+
+	#It might help if your Square board did more,
+	#like revealing if it has been viewed, flagged, etc. 
 end
 
 class Gameboard
@@ -28,11 +35,16 @@ class Gameboard
 		start_time = Time.now
 		while true
 			print_board
+			#Why convert the user move?
+			#You could just accept two integers
+			#with get.chomp.to_i and then use 
+			#them as-is as indices. 
 			user_move = get_input
 			pos = get_pos(user_move)
 
-			# check to see if the position entered is valid. only check
-			# for when the user wants to reveal or flag
+			# Woa, redo is cool. Never seen that before. 
+			# Gotta try  it now!
+
 			redo unless valid_pos?(user_move[0], pos)
 
 			case user_move[0]
@@ -70,6 +82,8 @@ class Gameboard
 		# he/she has given a position, it is in the board,
 		# and that it hasn't been tried before
 		if move == 'r' || move == 'f'
+			#does the empty? method not exist yet?
+
 			if pos.empty?
 				return false
 			elsif (pos[0] < 0 || pos[0] >= @board_size) ||
@@ -208,6 +222,8 @@ def get_name
 	gets.chomp
 end
 
+#Is this where you get the game going? I wasn't able to get it to run.
+#:(
 def create_game(name)
 	puts "Number of rows/columns?"
 	b = gets.chomp.to_i
